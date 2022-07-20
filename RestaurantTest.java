@@ -71,5 +71,19 @@ class RestaurantTest {
         assertThrows(itemNotFoundException.class,
                 ()->restaurant.removeFromMenu("French fries"));
     }
+
+     /*
+    @Test
+    public void total_price_will_be_calculated_for_menu_item_list_()
+    {
+        // add items in a list
+
+        // calculate their total price and store in variable
+
+        //assertequals check whether the variable total price value is same as the getTotalPrice() method created in Restaurant class
+
+    }
+    */
+
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }

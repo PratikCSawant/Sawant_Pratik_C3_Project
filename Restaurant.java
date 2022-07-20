@@ -70,4 +70,17 @@ public class Restaurant {
         return name;
     }
 
+    /*
+    //function which will return total price in int
+    //function will accept parameter as list of menuitems
+
+        // inside function
+            //create local variable with default price zero
+            //iterate each through the menuitmes
+                //check whether the menuitem is actual item in item list or not
+                //if item is present then item
+                    //add the price with local variable
+
+            //return the total price local variable
+     */
 }
