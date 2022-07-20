@@ -2,6 +2,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -84,6 +86,20 @@ class RestaurantTest {
 
     }
     */
+
+    @Test
+    public void total_price_will_be_calculated_for_menu_item_list_()
+    {
+        List<String> itemList = new ArrayList<>();
+
+        itemList.add("Sweet corn soup");
+        itemList.add("Vegetable lasagne");
+
+        int totalprice = 119+269;
+
+        assertEquals(totalprice, restaurant.getTotalPrice(itemList));
+
+    }
 
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }

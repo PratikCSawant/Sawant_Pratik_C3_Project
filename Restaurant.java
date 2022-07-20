@@ -83,4 +83,18 @@ public class Restaurant {
 
             //return the total price local variable
      */
+
+    public int getTotalPrice(List<String> selectedMenuItems)
+    {
+        int price = 0;
+        for(String itemName : selectedMenuItems)
+        {
+            Item item = findItemByName(itemName);
+            if(item != null)
+            {
+                price = price + item.getPrice();
+            }
+        }
+        return price;
+    }
 }
